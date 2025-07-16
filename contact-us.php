@@ -4,8 +4,6 @@
   
   <h1>Contact Us</h1>
 </section>
-
-
 <section class="div-container fade-in-on-scroll">
     <div class="row">
    <div class="col-lg-6 col-md-6 col-sm-12">
@@ -47,7 +45,6 @@
     </div>
   </section>
 
-  <!-- Map and Contact Form -->
   <section class="gray-section fade-in-on-scroll">
     <section class="div-container ">
         <div class="row">

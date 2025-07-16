@@ -119,7 +119,6 @@
     </div>
     </div>
     
-  <!-- Book Button -->
   <button class="book-button">Book Room Now</button>
     </div></div>
     </div>
@@ -183,7 +182,6 @@
       </div>
     </div>
 
-    <!-- Add more cards if needed -->
   </div>
 
   <button class="slider-btn right" onclick="scrollSlider(1)">

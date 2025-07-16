@@ -99,20 +99,13 @@
         <div class="form-container">
           <div class="form-select-wrapper">
             <label>Check in :</label>
-            <select>
-              <option>20-08-2024</option>
-              <option>21-08-2024</option>
+            <input type="date">
 
-            </select>
           </div>
 
           <div class="form-select-wrapper">
             <label>Check out :</label>
-            <select>
-              <option>20-08-2024</option>
-              <option>21-08-2024</option>
-
-            </select>
+           <input type="date">
           </div>
 
           <div class="form-select-wrapper">
@@ -191,8 +184,6 @@
         <div class="details">130 Sq | 2–4 Guests | Free Wi-Fi</div>
       </div>
     </div>
-
-    <!-- Add more cards if needed -->
   </div>
 
   <button class="slider-btn right" onclick="scrollSlider(1)">

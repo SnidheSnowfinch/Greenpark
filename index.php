@@ -2,29 +2,18 @@
 
   <div>
   <div class="slider">
-    <!-- Slides -->
     <div class="slide active" style="background-image: url('./bootstrap/images/home-img.jpg');"></div>
     <div class="slide" style="background-image: url('./bootstrap/images/slide-img-2.jpg');"></div>
     <div class="slide" style="background-image: url('./bootstrap/images/slide-img-3.jpg');"></div>
     <div class="slide" style="background-image: url('./bootstrap/images/slide-img-4.avif');"></div>
     <div class="slide" style="background-image: url('./bootstrap/images/slide-img1.avif');"></div>
 
-    <!-- Overlay -->
     <div class="overlay"></div>
-
-    <!-- Navbar -->
-  
-
-    <!-- Center Content -->
     <div class="home-banner-content">
       <h5>A COASTAL RETREAT FOR SERENITY AND INDULGENCE</h5>
       <h1>Welcome to Our Luxurious<br>Hotel & Resort</h1>
     </div>
 
-    <!-- Bottom Button Group -->
-  
-
-    <!-- Arrows -->
     <div class="arrow left" onclick="prevSlide()"><i class="bi-arrow-left"></i></div>
     <div class="arrow right" onclick="nextSlide()"><i class="bi-arrow-right"></i></div>
   </div>
@@ -34,20 +23,14 @@
   <div class="form-container">
   <div class="form-select-wrapper">
     <label>Check in :</label>
-    <select>
-      <option>20-08-2024</option>
-      <option>21-08-2024</option>
+    <input type="date">
 
-    </select>
   </div>
 
   <div class="form-select-wrapper">
     <label>Check out :</label>
-    <select>
-      <option>20-08-2024</option>
-      <option>21-08-2024</option>
+    <input type="date">
 
-    </select>
   </div>
 
   <div class="form-select-wrapper">
@@ -140,7 +123,6 @@
      
       </section>
       <div class="video-banner">
-        <!-- Replace this src with your actual video -->
         <img src="./bootstrap/images/banner-home.jpg" alt="">
         <div class="video-overlay-new">
           <h1>GREENPARK</h1>

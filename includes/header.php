@@ -11,11 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script  src="bootstrap/js/bootstrap.bundle.js"></script>
 
-
-
-
-
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg" id="mainNavbar">
@@ -23,7 +18,6 @@
 
     <a class="logo" href="index.php">GreenPark</a>
 
-    <!-- custom toggler -->
     <button class="navbar-toggler d-lg-none" type="button"
             data-bs-toggle="collapse" data-bs-target="#mainNav"
             aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +29,6 @@
         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about-us.php">About</a></li>
 
-        <!-- Rooms dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="roomsMenu" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">Rooms</a>
@@ -46,7 +39,6 @@
           </ul>
         </li>
 
-        <!-- Services dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">Services</a>
@@ -64,19 +56,4 @@
       <button class="res-btn">Reservation</botton>
 
     </div>
-
- 
 </nav>
-  <!-- <div class="navbar" id="mainNavbar">
-    <div class="logo"><a href="index.php">GreenPark</a></div>
-    <div class="nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="room-list.php">Rooms</a>
-      <a href="#">Services</a>
-      <a href="#">Restaurant</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-      <button>Reservation</botton>
-    </div>
-  </div> -->

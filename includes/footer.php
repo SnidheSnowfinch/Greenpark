@@ -3,7 +3,6 @@
   <div class="container footer-cols">
     <div class="row gy-4">
 
-      <!-- Contact -->
       <div class="col-12 col-md-6 col-lg-3">
         <h6 class="footer-head">Contact Us</h6>
         <p class="mb-2">Call : <a href="tel:+911234567890">+91 1234567890</a></p>
@@ -18,13 +17,11 @@
         </ul>
       </div>
 
-      <!-- Address -->
       <div class="col-12 col-md-6 col-lg-3">
         <h6 class="footer-head">Address</h6>
         <p>Greenpark, Beach Road,<br>2nd Street 47754,<br>INDIA</p>
       </div>
 
-      <!-- Links -->
       <div class="col-12 col-md-6 col-lg-2">
         <h6 class="footer-head">Links</h6>
         <ul class="list-unstyled">
@@ -37,7 +34,6 @@
         </ul>
       </div>
 
-      <!-- Map -->
       <div class="col-12 col-md-6 col-lg-4">
         <h6 class="footer-head">Map Location</h6>
         <iframe
@@ -50,13 +46,11 @@
   referrerpolicy="no-referrer-when-downgrade"
 ></iframe>      </div>
 
-    </div> <!-- /row -->
-  </div>  <!-- /container -->
+    </div> 
+  </div>  
 
-  <!-- back to top -->
   <a href="#" class="back-to-top"><i class="bi bi-chevron-up"></i></a>
 
-  <!-- copyright bar -->
   <div class="footer-bottom py-3 mt-5">
     <div class="container d-flex justify-content-between align-items-center">
       <span>Greenpark Copyright © 2024  |  <a href="#">Snowfinch</a></span>
@@ -67,17 +61,14 @@
 <script>
       const navbar = document.getElementById("mainNavbar");
 
-// Get current page path
 const path = window.location.pathname;
 
-// Extract just the filename, e.g., "index.html"
 const currentPage = path.split("/").pop();
 
 if (currentPage === "" || currentPage === "index.php") {
   // Home page
   navbar.classList.add("navbar-home");
 } else {
-  // All other pages
   navbar.classList.add("navbar-inner");
 }
 
@@ -120,17 +111,17 @@ if (currentPage === "" || currentPage === "index.php") {
 
     function scrollSlider(direction) {
     const slider = document.getElementById('roomSlider');
-    const cardWidth = slider.querySelector('.room-card').offsetWidth + 20; // card width + gap
+    const cardWidth = slider.querySelector('.room-card').offsetWidth + 20; 
     slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
   function scrollFacilities(direction) {
     const slider = document.getElementById('facilitySlider');
-    const cardWidth = slider.querySelector('.facility-card').offsetWidth + 20; // card width + gap
+    const cardWidth = slider.querySelector('.facility-card').offsetWidth + 20; 
     slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
   function scrollExplore(direction) {
     const slider = document.getElementById('ExploreSlider');
-    const cardWidth = slider.querySelector('.Explore-card').offsetWidth + 20; // card width + gap
+    const cardWidth = slider.querySelector('.Explore-card').offsetWidth + 20; 
     slider.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
   }
 
@@ -172,17 +163,15 @@ if (currentPage === "" || currentPage === "index.php") {
     index = (index + 1) % testimonials.length;
   }
 
-  setInterval(updateTestimonial, 5000); // auto slide every 5 seconds
+  setInterval(updateTestimonial, 5000); 
 
 
   function changeImage(el) {
-    // Remove active from all thumbnails
+
     document.querySelectorAll('.thumb').forEach(img => img.classList.remove('active'));
-    // Add active to clicked one
     el.classList.add('active');
-    // Change the main image src
     const main = document.getElementById('mainImage');
-    const fullSize = el.src.replace('w=300', 'w=1200'); // or use custom full-size URL
+    const fullSize = el.src.replace('w=300', 'w=1200'); 
     main.src = fullSize;
   }
   document.addEventListener("DOMContentLoaded", () => {
