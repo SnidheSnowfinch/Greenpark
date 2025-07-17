@@ -92,10 +92,10 @@ display: flex;
     text-decoration: none;
     font-size: 14px;
   }
-  .navbar-home .nav a:hover {
+  /* .navbar-home .nav a:hover {
     color: rgb(174, 158, 158);
 
-  }
+  } */
      .navbar-home .res-btn:hover{
       background: white;
       color: #111;
@@ -170,7 +170,7 @@ display: flex;
     background: transparent;
     color: white;
     font-size: 14px;
-    appearance: none;
+    /* appearance: none; */
     padding-right: 10px;
     padding-left: 10px;
 
@@ -834,18 +834,17 @@ display: flex;
         appearance: none;
         /* width: 110px; */
       }
+      .booking-field select{
+        width: 80px;
+
+      }
   
       .booking-input[type="date"]::-webkit-calendar-picker-indicator {
         filter: invert(1);
       }
-  
-    
-  
       .booking-row .booking-field {
         flex: 1;
       }
-     
-  
       .extra-services {
         margin-top: 16px;
         border-radius: 8px;
@@ -1063,14 +1062,6 @@ display: flex;
   font-family: 'Libre Caslon Display', serif;
 
     }
-
-
- 
-
-   
-
-   
-
     .contact-form input,
     .contact-form textarea {
       width: 100%;
@@ -1105,10 +1096,27 @@ width: 100%;
 
     .nav-link{
     margin: 0 10px;
-
       position:relative;
       overflow:hidden;           }
+      .nav-item{
+    transition: color 0.3s;
+
+      }
+      .nav-item a:hover::after {
+        width: 100%;
+      }
+      .nav-item a::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #aa8453;
+        transition: width 0.3s ease;
+      }
   
+     
     
     
     .dropdown-menu{
@@ -1146,16 +1154,8 @@ width: 100%;
       gap:.25rem;                  
     }
     .navbar-toggler-icon{display:none;}
-    .nav-item.dropdown > .dropdown-toggle::after{
-      display:inline-block;  
-      background: transparent;
-      font-size: .65rem;         
-      transition: transform .3s ease;
-    }
-    
-    .nav-item.dropdown.show > .dropdown-toggle::after{
-      transform: rotate(180deg) !important; 
-    }
+  
+   
     .navbar-toggler span,
     .navbar-toggler::before,
     .navbar-toggler::after{
@@ -1181,6 +1181,27 @@ width: 100%;
     
     .sticky-top{backdrop-filter:blur(5px);}
     @media(max-width: 767px) {
+      .parallax {
+        background-image: url('./images/banner-home.jpg');
+          height: 20vh;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .parallax h1 {
+        z-index: 20;
+        font-family: 'Libre Caslon Display', serif;
+        font-size: 40px;
+        text-align: center;
+     
+      }
       .nav-item.dropdown{
         text-align: center;
       }
@@ -1499,6 +1520,27 @@ width: 100%;
 
 
     @media(min-width: 768px) and (max-width: 900px)  {
+      .parallax {
+        background-image: url('./images/banner-home.jpg');
+          height: 50vh;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .parallax h1 {
+        z-index: 20;
+        font-family: 'Libre Caslon Display', serif;
+        font-size: 50px;
+        text-align: center;
+     
+      }
       .thumbnails img {
         width: 280px;
         height: 130px;
@@ -2014,12 +2056,31 @@ border: 1px solid rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px;
   padding: 50px;
   background-color: #f1f1f1;
 }
-
 .map {
   flex: 1;
   min-width: 300px;
 }
+.parallax {
+  background-image: url('./images/banner-home.jpg');
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.parallax h1 {
+  z-index: 20;
+  font-family: 'Libre Caslon Display', serif;
+  font-size: 60px;
+  text-align: center;
 
+}
 .map iframe {
   width: 100%;
   height: 400px !important;
@@ -2063,7 +2124,9 @@ border: 1px solid rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-  }
+.social-list {
+  justify-content: flex-start !important;
+  }}
 
   footer{
     background:#1B1B1B;
@@ -2195,3 +2258,13 @@ border: 1px solid rgb(0, 0, 0); padding: 5px 10px; border-radius: 5px;
     opacity: 1;
     transform: translateY(0);
   }
+
+
+  .parallax::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Change color and opacity here */
+    z-index: 1;
+  }
+ 

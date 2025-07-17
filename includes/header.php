@@ -30,8 +30,8 @@
         <li class="nav-item"><a class="nav-link" href="about-us.php">About</a></li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="roomsMenu" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Rooms</a>
+          <a class="nav-link" href="#" id="roomsMenu" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Rooms ▾</a>
           <ul class="dropdown-menu" aria-labelledby="roomsMenu">
             <li><a class="dropdown-item" href="room-collection.php">Deluxe Room</a></li>
             <li><a class="dropdown-item" href="#">Executive Suite</a></li>
@@ -40,8 +40,8 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesMenu" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <a class="nav-link" href="#" id="servicesMenu" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Services ▾</a>
           <ul class="dropdown-menu" aria-labelledby="servicesMenu">
             <li><a class="dropdown-item" href="#">Spa & Wellness</a></li>
             <li><a class="dropdown-item" href="#">Airport Pickup</a></li>

@@ -122,13 +122,11 @@
 </div>
      
       </section>
-      <div class="video-banner">
-        <img src="./bootstrap/images/banner-home.jpg" alt="">
-        <div class="video-overlay-new">
-          <h1>GREENPARK</h1>
-          <div class="play-button"></div>
-        </div>
-      </div>
+  <div class="parallax">
+  <h1>GREENPARK</h1>
+  </div>
+
+
       <section class="div-container fade-in-on-scroll">
         <p>LUXURIOUS FACILITIES</p>
         <h2>Explore Our Exclusive Resort Facilities</h2>
